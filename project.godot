@@ -18,7 +18,7 @@ _global_script_class_icons={
 config/name="Mini Platform Game"
 run/main_scene="res://World.tscn"
 config/use_custom_user_dir=true
-config/custom_user_dir_name="C:\\Repositories\\Godot"
+config/custom_user_dir_name="c:\\Repositories\\godot-games\\"
 config/icon="res://icon.png"
 
 [display]
