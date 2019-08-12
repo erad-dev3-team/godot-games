@@ -33,10 +33,9 @@ animations = [ {
 extents = Vector2( 18, 28 )
 
 [node name="World" type="Node2D"]
-modulate = Color( 0.227451, 0.427451, 0.737255, 1 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 311.634, 52.9085 )
+position = Vector2( 270, 60 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -48,6 +47,7 @@ frames = SubResource( 2 )
 animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
 position = Vector2( -1.63428, 4 )
 shape = SubResource( 1 )
 
