@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="World" type="Node2D"]
+modulate = Color( 0.227451, 0.427451, 0.737255, 1 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 500, 300 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 2 )
+
+[node name="Wall" type="StaticBody2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 500.305, 471.556 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpriteWall" type="Sprite" parent="Wall"]
+position = Vector2( 0.801758, -0.918549 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
